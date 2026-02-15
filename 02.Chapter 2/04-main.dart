@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() {
+void main(){
   runApp(MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -12,111 +11,96 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.white,
-        body: SafeArea(
-          child: Column(
-            children: [
-              Center(
-                child: Text(
-                  'Log In',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.red,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 20,
-              ),
-              Center(
-                child: Text(
-                  'Hey I am Umar \n I am a Flutter Developer ',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 24,
-                    color: Colors.black,
-                  ),
-                ),
-              ),
-              SizedBox(
-                height: 100 ,
-              ),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    hintText: 'Email',
-                    fillColor: Colors.grey.shade200,
-                    filled: true,
-                    prefixIcon: Icon(Icons.alternate_email,color: Colors.black,),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white10),
-                          borderRadius: BorderRadius.circular(10),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white10),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                ),
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: 20, right: 20, top: 10),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    hintText: 'Password',
-                    fillColor: Colors.grey.shade200,
-                    filled: true,
-                    prefixIcon: Icon(Icons.lock,color: Colors.black,),
-                    suffixIcon: Icon(Icons.visibility_off_outlined),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white10),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white10),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
+        backgroundColor: Colors.pink.shade100,
+        body: Column(
+          children: [
+            SizedBox(
+              height: 35,
+            ),
+            SafeArea(child: Center(child: Text('Log In',style: TextStyle(color: Colors.pinkAccent,fontSize: 45,fontWeight: FontWeight.bold),))), SizedBox(height: 22),
+Padding(
+  padding: const EdgeInsets.all(8.0),
+  child: TextFormField(
+    decoration: InputDecoration(
+      hintText: 'log in',
+      fillColor: Colors.pinkAccent.withOpacity(.3),
+      filled: true,
+      prefixIcon: Icon(Icons.email_outlined),
+      focusedBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(50),
+        borderSide: BorderSide(color: Colors.pink,width: 3),
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderRadius: BorderRadius.circular(50),
+        borderSide: BorderSide(color: Colors.white),
+      ),
+    ),
+  ),
+),
+            SizedBox(
+              height: 22,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  hintText: 'password',
+                  fillColor: Colors.pinkAccent.withOpacity(.3),
+                  filled: true,
+                  prefixIcon: Icon(Icons.lock),
+                  suffixIcon: Icon(Icons.remove_red_eye),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.pink,width: 3),
+                    borderRadius: BorderRadius.circular(50),
 
                   ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(50),
+                    borderSide: BorderSide(color: Colors.white),
+                  ),
                 ),
               ),
-              SizedBox(
-                height: 2,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text('Forgot Password?',style: TextStyle(color: Colors.red),)
-                ],
-              ),
-              SizedBox(
-                height: 50,
-              ),
-              Container(
-                width: 300,
-                height: 50,
-                decoration: BoxDecoration(
-                  color: Colors.red,
-                  borderRadius: BorderRadius.circular(10),
-
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 210),
+              child: Text('Forget Password',style: TextStyle(color: Colors.pink),),
+            ),
+            SizedBox(
+              height: 40,
+            ),
+            Container(
+              height: 40,
+              width: 300,
+              decoration: BoxDecoration(
+                color: Colors.pinkAccent.withOpacity(.5),
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(40),
+                  topRight: Radius.circular(40),
                 ),
-                child: Center(child: Text('Log In', style: TextStyle(color: Colors.white,fontSize: 22,fontWeight: FontWeight.bold),)),
+                border: Border.all(
+                  color: Colors.white70,
+                  width: 3,
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 22,
+                    color: Colors.pink
+                  )
+                ]
               ),
-              SizedBox(
-                height: 10,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text('Already have an account??',style: TextStyle(color: Colors.red),),
-                  SizedBox(width: 15,),
-                  Text('Sign In',style: TextStyle(color: Colors.black),),
-                ],
-              ),
-            ],
-          ),
+              child: Center(child: Text('Log In',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25,color: Colors.white),)),
+            ),
+            SizedBox(height: 20,),
+            RichText(text: TextSpan(
+              text: "don't have a account ?  ",style: TextStyle(color: Colors.pink),
+              children: [
+                TextSpan( text: "Sign up",
+               style: TextStyle(color: Colors.pink,fontWeight: FontWeight.bold,decoration: TextDecoration.underline,decorationThickness:2),
+                ),
+              ]
+            ),
+            ),
+          ],
         ),
       ),
     );
