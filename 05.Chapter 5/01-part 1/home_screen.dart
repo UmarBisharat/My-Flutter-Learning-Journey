@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled1/screen_2.dart';
+import 'package:untitled1/screen_2.dart'; //We import screen_2.dart in home_screen.dart to connect HomeScreen with Screen2 so that navigation works.”
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
 crossAxisAlignment: CrossAxisAlignment.center,
 children: [
   Center(
-    child: TextButton(
+    child: TextButton(  //A TextButton is just a simple clickable button that shows text.
       onPressed:(){
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => Screen2())
