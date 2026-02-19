@@ -22,7 +22,7 @@ class _Screen2State extends State<Screen2> {
           Center(
             child: TextButton(
               onPressed:(){
-                Navigator.pop(context);
+                Navigator.pop(context); //Pop = back (no import required)
               },
               child: Text('Screen 2'),
             ),
