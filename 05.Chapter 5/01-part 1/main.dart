@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled1/home_screen.dart';
+import 'package:untitled1/home_screen.dart'; //The import in main.dart is just connecting main.dart with HomeScreen so Flutter knows what widget to show first.
 
 void main(){
   runApp(MyApp());
@@ -10,10 +10,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primaryColor: Colors.blue
-      ),
       home: HomeScreen(),
     );
   }
