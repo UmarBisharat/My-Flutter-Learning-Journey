@@ -35,7 +35,7 @@ Text('Lottery winning number is 2',style: TextStyle(color: Colors.pink,wordSpaci
               height: 200,
               width: 400,
               decoration: BoxDecoration(
-                color: Colors.pinkAccent,
+                color: Colors.green,
                 boxShadow: [
                   BoxShadow(
             color: Colors.black,
@@ -52,10 +52,10 @@ Text('Lottery winning number is 2',style: TextStyle(color: Colors.pink,wordSpaci
 
                 children: [
                   SizedBox(height: 22,),
-                  Icon(Icons.error_outline_outlined,color: Colors.white,),
+                  Icon(Icons.check_circle_outline,color: Colors.white,),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
-                    child: Text('Yoy lose & Your Lottery Number is $x \n Better luck next time',style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),textAlign: TextAlign.center,),
+                    child: Text('Congratulation you won the lottery $x',style: TextStyle(color: Colors.white,fontSize: 18,fontWeight: FontWeight.bold),textAlign: TextAlign.center,),
                   )
                 ],
               ),
@@ -67,7 +67,7 @@ Text('Lottery winning number is 2',style: TextStyle(color: Colors.pink,wordSpaci
            height: 200,
            width: 400,
            decoration: BoxDecoration(
-             color: Colors.green,
+             color: Colors.red,
              boxShadow: [
                BoxShadow(
                  color: Colors.black,
@@ -87,7 +87,7 @@ Text('Lottery winning number is 2',style: TextStyle(color: Colors.pink,wordSpaci
                Icon(Icons.check_box,color: Colors.white,),
                Padding(
                  padding: const EdgeInsets.all(8.0),
-                 child: Text('Congratulation you won & Your Lottery Number is $x',style: TextStyle(color: Colors.white),),
+                 child: Text('You lose & Lottery your Number is $x \n better luck next time',textAlign: TextAlign.center,style: TextStyle(color: Colors.white),),
                )
              ],
            ),
