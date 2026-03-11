@@ -47,7 +47,13 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         body: TabBarView(
           children: [
+
+            // Camera
+            
             Text('Camera'),
+
+            // Chats
+            
             ListView.builder(
               itemCount: 10,
               itemBuilder: (context, index) {
@@ -63,6 +69,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 );
               },
             ),
+
+            // Status
+            
             ListView.builder(
               itemCount: 10,
               itemBuilder: (context, index) {
