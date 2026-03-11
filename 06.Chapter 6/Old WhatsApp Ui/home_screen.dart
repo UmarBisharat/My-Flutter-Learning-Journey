@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
-  static const String id = 'home_screen';
-  const HomeScreen({super.key});
+class Screen1 extends StatefulWidget {
+  static const String id = 'screen_1'; // updated for this file
+  const Screen1({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<Screen1> createState() => _Screen1State();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _Screen1State extends State<Screen1> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
 
             // ================= CAMERA TAB START =================
-            Text('Camera'),
+            Icon(Icons.camera_alt,color: Colors.teal,size: 200,),
             // ================= CAMERA TAB END =================
 
 
@@ -59,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 return ListTile(
                   leading: CircleAvatar(
                     backgroundImage: NetworkImage(
-                      'https://media.licdn.com/dms/image/v2/D4D03AQFSfWlsXowPug/profile-displayphoto-scale_400_400/B4DZv4HQzKJoAg-/0/1769394214008?e=1773878400&v=beta&t=7Ql5nN-e2jqOPIWA5BUi1B87Ibt9mLvBSvQLcdbL4Gk',
+                      'https://yt3.googleusercontent.com/OG8lFQzZva7RFLX2gSHhokd6qSd39YarlvN4PhB2n6mgPi4fkxeEnJZaWQ22hToDKafrywlbnQ=s160-c-k-c0x00ffffff-no-rj',
                     ),
                   ),
                   title: Text('Umar Bisharat'),
@@ -90,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                             child: CircleAvatar(
                               backgroundImage: NetworkImage(
-                                'https://media.licdn.com/dms/image/v2/D4D03AQFSfWlsXowPug/profile-displayphoto-scale_400_400/B4DZv4HQzKJoAg-/0/1769394214008?e=1773878400&v=beta&t=7Ql5nN-e2jqOPIWA5BUi1B87Ibt9mLvBSvQLcdbL4Gk',
+                                'https://yt3.googleusercontent.com/OG8lFQzZva7RFLX2gSHhokd6qSd39YarlvN4PhB2n6mgPi4fkxeEnJZaWQ22hToDKafrywlbnQ=s160-c-k-c0x00ffffff-no-rj',
                               ),
                             ),
                           ),
@@ -112,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                         child: CircleAvatar(
                           backgroundImage: NetworkImage(
-                            'https://media.licdn.com/dms/image/v2/D4D03AQFSfWlsXowPug/profile-displayphoto-scale_400_400/B4DZv4HQzKJoAg-/0/1769394214008?e=1773878400&v=beta&t=7Ql5nN-e2jqOPIWA5BUi1B87Ibt9mLvBSvQLcdbL4Gk',
+                            'https://yt3.googleusercontent.com/OG8lFQzZva7RFLX2gSHhokd6qSd39YarlvN4PhB2n6mgPi4fkxeEnJZaWQ22hToDKafrywlbnQ=s160-c-k-c0x00ffffff-no-rj',
                           ),
                         ),
                       ),
@@ -134,7 +134,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 return ListTile(
                   leading: CircleAvatar(
                     backgroundImage: NetworkImage(
-                      'https://media.licdn.com/dms/image/v2/D4D03AQFSfWlsXowPug/profile-displayphoto-scale_400_400/B4DZv4HQzKJoAg-/0/1769394214008?e=1773878400&v=beta&t=7Ql5nN-e2jqOPIWA5BUi1B87Ibt9mLvBSvQLcdbL4Gk',
+                      'https://yt3.googleusercontent.com/OG8lFQzZva7RFLX2gSHhokd6qSd39YarlvN4PhB2n6mgPi4fkxeEnJZaWQ22hToDKafrywlbnQ=s160-c-k-c0x00ffffff-no-rj',
                     ),
                   ),
                   title: Text('Umar Bisharat'),
