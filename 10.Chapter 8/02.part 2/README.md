@@ -36,8 +36,9 @@ In this project, I also used a constants file where I created my own colors and 
 
 Create component once → Use everywhere
 
+---
+
 ## Picture
 
----
 
 <img width="182" height="373" alt="image" src="https://github.com/user-attachments/assets/4d67432d-62d4-4aea-a195-ed244203b797" />
