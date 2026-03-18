@@ -1,87 +1,32 @@
-# 📱 Flutter Constants Practice
+# 📱 Flutter Constants Learning
 
-This project is a small practice to learn how to use a **constants file** in Flutter.
+In this project, I learned how to create a constants file in Flutter.
 
-## 🎯 What I Learned
+I created my own:
 
-In this project, I learned that we can create a separate Dart file (like `constant.dart`) and store:
+* myChosenColor
+* mySelectedColor
+* myTextStyle
 
-* Colors 🎨
-* TextStyles ✍️
+In myTextStyle, I added:
 
-Then we can use them anywhere in the app.
+* font size
+* color (using my chosen color)
+* font weight
 
----
+After creating these in constant.dart, I learned that I can use them anywhere in my app just by calling their names.
 
-## 📂 constant.dart
+For example:
 
-```dart
-import 'package:flutter/material.dart';
+* I can use myTextStyle in multiple Text widgets
+* I can use my custom colors anywhere in the UI
 
-const Color myChosenColor = Colors.purple;
-const Color mySelectedColor = Colors.pink;
+This helps to:
 
-const myTextStyle = TextStyle(
-  fontSize: 40,
-  color: myChosenColor,
-  fontWeight: FontWeight.bold,
-);
-```
+* avoid writing the same code again and again
+* keep the app design consistent
+* make code clean and easy to manage
 
----
+## 💡 Key Learning
 
-## 📱 screen_1.dart
-
-```dart
-import 'package:flutter/material.dart';
-import 'package:practice/constant.dart';
-
-class Screen1 extends StatefulWidget {
-  const Screen1({super.key});
-
-  @override
-  State<Screen1> createState() => _Screen1State();
-}
-
-class _Screen1State extends State<Screen1> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Text('Umar', style: myTextStyle),
-            Text('Umar', style: myTextStyle),
-            Text('Umar', style: myTextStyle),
-            Text('Umar', style: myTextStyle),
-            Text('Umar', style: myTextStyle),
-          ],
-        ),
-      ),
-    );
-  }
-}
-```
-
----
-
-## 💡 Key Concept
-
-Define once → Use everywhere
-
----
-
-## ✅ Benefits
-
-* Clean code 🧹
-* No repetition 🔁
-* Easy to update styles ⚡
-
----
-
-## 📌 Status
-
-✔️ Learning Flutter basics
-✔️ Practicing clean code structure
-
----
+Create once → Use everywhere
