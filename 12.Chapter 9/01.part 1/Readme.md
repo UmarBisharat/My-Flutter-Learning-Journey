@@ -61,6 +61,61 @@ Inside `builder`, we provide the screen widget that we want to navigate to.
 
 ---
 
+# Image Widget Concepts
+
+We also used some new properties inside the `Image` widget.
+
+Example:
+
+```dart
+Image(
+  height: double.infinity,
+  fit: BoxFit.fitHeight,
+  image: NetworkImage(
+    'image url',
+  ),
+)
+```
+
+---
+
+## 1. `double.infinity`
+
+```dart
+height: double.infinity
+```
+
+This means the widget should take the maximum available height.
+
+In our splash screen, it helps the image cover the full screen height.
+
+---
+
+## 2. `BoxFit.fitHeight`
+
+```dart
+fit: BoxFit.fitHeight
+```
+
+`BoxFit` controls how the image fits inside its space.
+
+`fitHeight` means:
+
+- The image height fills the available height
+- The width adjusts automatically according to the image ratio
+
+---
+
+## 3. `NetworkImage`
+
+```dart
+NetworkImage('image url')
+```
+
+`NetworkImage` is used to load an image from the internet using a URL.
+
+---
+
 # Screens Created
 
 We created:
@@ -105,5 +160,4 @@ Home Screen Opens
 
 - Flutter
 - Dart
-
 ```
