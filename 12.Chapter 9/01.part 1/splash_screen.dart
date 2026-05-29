@@ -7,10 +7,10 @@ class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
+  State<SplashScreen> createState() => _SpashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _SpashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     // TODO: implement initState
@@ -25,15 +25,11 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    print('object');
     return Scaffold(
       body: Image(
-        height: double.infinity,
-        fit: BoxFit.fitHeight,
-        image: NetworkImage(
-          'https://images.pexels.com/photos/32140540/pexels-photo-32140540/free-photo-of-vintage-camera-on-white-fabric-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-        ),
-      ),
+          height: double.infinity,
+          fit: BoxFit.fitHeight,
+          image: NetworkImage('https://images.pexels.com/photos/32140540/pexels-photo-32140540/free-photo-of-vintage-camera-on-white-fabric-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')),
     );
   }
 }
