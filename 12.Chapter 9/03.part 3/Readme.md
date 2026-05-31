@@ -202,8 +202,6 @@ This app demonstrates:
 * Basic state management using setState
 * Simple authentication flow
 
-# Pictures
-
 ## Pictures
 
 <p float="left">
