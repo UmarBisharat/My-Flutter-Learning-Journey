@@ -204,10 +204,11 @@ This app demonstrates:
 
 # Pictures
 
-<img width="1080" height="2340" alt="Screenshot_1780222113" src="https://github.com/user-attachments/assets/8417ab2d-c84d-4b9d-abdc-0937675f3ecb" />
+## Pictures
 
-<img width="1080" height="2340" alt="Screenshot_1780222130" src="https://github.com/user-attachments/assets/6c510475-2d9a-4208-9813-42ed4c058390" />
-
-<img width="1080" height="2340" alt="Screenshot_1780222139" src="https://github.com/user-attachments/assets/f882d625-7a46-4d6b-83b3-e0c74211b404" />
-
+<p float="left">
+  <img src="https://github.com/user-attachments/assets/8417ab2d-c84d-4b9d-abdc-0937675f3ecb" width="250"/>
+  <img src="https://github.com/user-attachments/assets/6c510475-2d9a-4208-9813-42ed4c058390" width="250"/>
+  <img src="https://github.com/user-attachments/assets/f882d625-7a46-4d6b-83b3-e0c74211b404" width="250"/>
+</p>
 
